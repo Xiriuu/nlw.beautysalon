@@ -707,6 +707,7 @@ footer .social a:hover {
   /* home */
   #home .container {
     grid-auto-flow: column;
+    align-items: center;
     justify-content: space-between;
     margin: 0 auto;
   }
@@ -777,3 +778,122 @@ footer .social a:hover {
 
 
 /* medium devices: 767 > */
+@media (min-width: 767px) {
+
+  nav.show .menu {
+    opacity: 1;
+    visibility: visible;
+    background: var(--body-color);
+    height: 60vh;
+    width: 40vw;
+    position: fixed;
+    top: 0px;
+    left: 460px;
+    display: grid;
+    place-content: center;
+    border-bottom: solid var(--base-color);
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.35);
+  }
+
+
+  /* modifications */
+  .section {
+    padding: 10rem 0;
+  }
+
+  .container {
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* homr */
+  #home .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .image::before {
+    left: 0;
+  }
+
+  #home .image img {
+    height: 15rem;
+    width: 20rem;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 15rem;
+    text-align: left;
+  }
+
+  /* about */
+  #about .title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  #about .subtitle {
+    font-size: 1.15rem;
+  }
+
+  /* services */
+  #services .title,
+  #services .subtitle {
+    text-align: center;
+  }
+
+  .cards.grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding: 2rem 1rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* testimonials */
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #testimonials .title {
+    max-width: 20rem;
+    text-align: center;
+    display: block;
+    margin-left: 10rem;
+  }
+
+  /* contact */
+  #contact .text {
+    margin-left: 1.5rem;
+  }
+
+  #contact .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact ul {
+    margin-left: 1.5rem;
+  }
+
+  /* footer */
+  footer .brand {
+    margin-left: 1.5rem;
+  }
+
+  footer .grid {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
