@@ -777,34 +777,3 @@ footer .social a:hover {
 
 
 /* medium devices: 767 > */
-@media (min-widht: 767px) {
-  :root {
-    --title-font-size: 2rem;
-    --subtitle-font-size: 0.85rem;
-  }
-
-  /* navigation */
-  nav .menu {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  nav .menu ul {
-    display: none;
-  }
-
-  nav .menu ul li a.title {
-    font: 400 1rem var(--body-font);
-    -webkit-font-smoothing: antialiased;
-  }
-
-  nav .menu ul li a.title.active {
-    font-weight: bold;
-    -webkit-font-smoothing: auto;
-  }
-
-  nav .icon-menu {
-    display: flex;
-  }
-
-}
